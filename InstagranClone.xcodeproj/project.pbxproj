@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A2B73ABC541E2A9F97650DE /* Pods_InstagranCloneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A0C3F98C6068D39C89597F1 /* Pods_InstagranCloneTests.framework */; };
+		501418FD23825EDDBC6FA555 /* Pods_InstagranClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A952BC45210BC5834DFF363 /* Pods_InstagranClone.framework */; };
+		509474D7B7F7029564A91478 /* Pods_InstagranClone_InstagranCloneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 468E157D8107769FE02D14FA /* Pods_InstagranClone_InstagranCloneUITests.framework */; };
 		542495702641DF6600C9285B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5424956F2641DF6600C9285B /* AppDelegate.swift */; };
 		542495722641DF6600C9285B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542495712641DF6600C9285B /* SceneDelegate.swift */; };
 		542495742641DF6600C9285B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542495732641DF6600C9285B /* HomeViewController.swift */; };
@@ -30,6 +33,11 @@
 		542495F52641E39500C9285B /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542495F42641E39500C9285B /* SearchResultViewController.swift */; };
 		542495FA2641EC9D00C9285B /* PostEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542495F92641EC9D00C9285B /* PostEditorViewController.swift */; };
 		542495FF2641ECDB00C9285B /* PublishPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542495FE2641ECDB00C9285B /* PublishPostViewController.swift */; };
+		54423D8226420B9D00141370 /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54423D8126420B9D00141370 /* DataBaseManager.swift */; };
+		54423D8726420D9C00141370 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54423D8626420D9C00141370 /* AuthManager.swift */; };
+		54423D8C26420E1100141370 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54423D8B26420E1100141370 /* StorageManager.swift */; };
+		54423DA92642178900141370 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54423DA82642178900141370 /* Extensions.swift */; };
+		546D13E12642036700B2E80F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 546D13E02642036700B2E80F /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +58,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		214FD5882C76DD7BE9FC4167 /* Pods-InstagranCloneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagranCloneTests.debug.xcconfig"; path = "Target Support Files/Pods-InstagranCloneTests/Pods-InstagranCloneTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3B792F9A10124B7191ECBE34 /* Pods-InstagranClone-InstagranCloneUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagranClone-InstagranCloneUITests.debug.xcconfig"; path = "Target Support Files/Pods-InstagranClone-InstagranCloneUITests/Pods-InstagranClone-InstagranCloneUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		468E157D8107769FE02D14FA /* Pods_InstagranClone_InstagranCloneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagranClone_InstagranCloneUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5424956C2641DF6600C9285B /* InstagranClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagranClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5424956F2641DF6600C9285B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		542495712641DF6600C9285B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +90,17 @@
 		542495F42641E39500C9285B /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		542495F92641EC9D00C9285B /* PostEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEditorViewController.swift; sourceTree = "<group>"; };
 		542495FE2641ECDB00C9285B /* PublishPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishPostViewController.swift; sourceTree = "<group>"; };
+		54423D8126420B9D00141370 /* DataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
+		54423D8626420D9C00141370 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		54423D8B26420E1100141370 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		54423DA82642178900141370 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		546D13E02642036700B2E80F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		554D05A8F5421554CAEE2228 /* Pods-InstagranCloneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagranCloneTests.release.xcconfig"; path = "Target Support Files/Pods-InstagranCloneTests/Pods-InstagranCloneTests.release.xcconfig"; sourceTree = "<group>"; };
+		5A952BC45210BC5834DFF363 /* Pods_InstagranClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagranClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		635264AED866A04588B820A6 /* Pods-InstagranClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagranClone.debug.xcconfig"; path = "Target Support Files/Pods-InstagranClone/Pods-InstagranClone.debug.xcconfig"; sourceTree = "<group>"; };
+		8A0C3F98C6068D39C89597F1 /* Pods_InstagranCloneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagranCloneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADC819D98328EFA063BEFEA3 /* Pods-InstagranClone-InstagranCloneUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagranClone-InstagranCloneUITests.release.xcconfig"; path = "Target Support Files/Pods-InstagranClone-InstagranCloneUITests/Pods-InstagranClone-InstagranCloneUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C1C97B3E2EE3BF55ED64626B /* Pods-InstagranClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagranClone.release.xcconfig"; path = "Target Support Files/Pods-InstagranClone/Pods-InstagranClone.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				501418FD23825EDDBC6FA555 /* Pods_InstagranClone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A2B73ABC541E2A9F97650DE /* Pods_InstagranCloneTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				509474D7B7F7029564A91478 /* Pods_InstagranClone_InstagranCloneUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +138,8 @@
 				542495882641DF6A00C9285B /* InstagranCloneTests */,
 				542495932641DF6A00C9285B /* InstagranCloneUITests */,
 				5424956D2641DF6600C9285B /* Products */,
+				7E35A2187816236F584391DD /* Pods */,
+				92DE76AE8EFE14E6065F97BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -185,8 +212,13 @@
 		542495AB2641DFC100C9285B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				546D13E02642036700B2E80F /* GoogleService-Info.plist */,
 				5424956F2641DF6600C9285B /* AppDelegate.swift */,
 				542495712641DF6600C9285B /* SceneDelegate.swift */,
+				54423D8126420B9D00141370 /* DataBaseManager.swift */,
+				54423D8626420D9C00141370 /* AuthManager.swift */,
+				54423D8B26420E1100141370 /* StorageManager.swift */,
+				54423DA82642178900141370 /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -223,18 +255,49 @@
 		542495D02641E20E00C9285B /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				542495D12641E23D00C9285B /* LoginViewController.swift */,
+				542495D62641E25D00C9285B /* RegistrationViewController.swift */,
+				546D140226420A8400B2E80F /* General */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		546D140226420A8400B2E80F /* General */ = {
+			isa = PBXGroup;
+			children = (
 				542495E02641E2EC00C9285B /* EditProfileViewController.swift */,
 				542495DB2641E29500C9285B /* PostViewController.swift */,
 				542495E52641E32000C9285B /* SettingsViewController.swift */,
 				542495EA2641E34B00C9285B /* ListViewController.swift */,
 				542495EF2641E37100C9285B /* SearchViewController.swift */,
 				542495F42641E39500C9285B /* SearchResultViewController.swift */,
-				542495D12641E23D00C9285B /* LoginViewController.swift */,
-				542495D62641E25D00C9285B /* RegistrationViewController.swift */,
 				542495F92641EC9D00C9285B /* PostEditorViewController.swift */,
 				542495FE2641ECDB00C9285B /* PublishPostViewController.swift */,
 			);
-			path = Onboarding;
+			path = General;
+			sourceTree = "<group>";
+		};
+		7E35A2187816236F584391DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				635264AED866A04588B820A6 /* Pods-InstagranClone.debug.xcconfig */,
+				C1C97B3E2EE3BF55ED64626B /* Pods-InstagranClone.release.xcconfig */,
+				3B792F9A10124B7191ECBE34 /* Pods-InstagranClone-InstagranCloneUITests.debug.xcconfig */,
+				ADC819D98328EFA063BEFEA3 /* Pods-InstagranClone-InstagranCloneUITests.release.xcconfig */,
+				214FD5882C76DD7BE9FC4167 /* Pods-InstagranCloneTests.debug.xcconfig */,
+				554D05A8F5421554CAEE2228 /* Pods-InstagranCloneTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		92DE76AE8EFE14E6065F97BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A952BC45210BC5834DFF363 /* Pods_InstagranClone.framework */,
+				468E157D8107769FE02D14FA /* Pods_InstagranClone_InstagranCloneUITests.framework */,
+				8A0C3F98C6068D39C89597F1 /* Pods_InstagranCloneTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,9 +307,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 542495992641DF6A00C9285B /* Build configuration list for PBXNativeTarget "InstagranClone" */;
 			buildPhases = (
+				E4D2A01D9334728A21E339A9 /* [CP] Check Pods Manifest.lock */,
 				542495682641DF6600C9285B /* Sources */,
 				542495692641DF6600C9285B /* Frameworks */,
 				5424956A2641DF6600C9285B /* Resources */,
+				B7ED669A6F7ECEFD4548C28C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,6 +326,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5424959C2641DF6A00C9285B /* Build configuration list for PBXNativeTarget "InstagranCloneTests" */;
 			buildPhases = (
+				5B4F7655905302049E83179D /* [CP] Check Pods Manifest.lock */,
 				542495812641DF6A00C9285B /* Sources */,
 				542495822641DF6A00C9285B /* Frameworks */,
 				542495832641DF6A00C9285B /* Resources */,
@@ -279,9 +345,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5424959F2641DF6A00C9285B /* Build configuration list for PBXNativeTarget "InstagranCloneUITests" */;
 			buildPhases = (
+				B6685D77E813A82E7321C8ED /* [CP] Check Pods Manifest.lock */,
 				5424958C2641DF6A00C9285B /* Sources */,
 				5424958D2641DF6A00C9285B /* Frameworks */,
 				5424958E2641DF6A00C9285B /* Resources */,
+				472577DFC08B54BE107512F8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -343,6 +411,7 @@
 				5424957F2641DF6900C9285B /* LaunchScreen.storyboard in Resources */,
 				5424957C2641DF6900C9285B /* Assets.xcassets in Resources */,
 				542495772641DF6600C9285B /* Main.storyboard in Resources */,
+				546D13E12642036700B2E80F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +431,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		472577DFC08B54BE107512F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstagranClone-InstagranCloneUITests/Pods-InstagranClone-InstagranCloneUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstagranClone-InstagranCloneUITests/Pods-InstagranClone-InstagranCloneUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InstagranClone-InstagranCloneUITests/Pods-InstagranClone-InstagranCloneUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B4F7655905302049E83179D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstagranCloneTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6685D77E813A82E7321C8ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstagranClone-InstagranCloneUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7ED669A6F7ECEFD4548C28C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstagranClone/Pods-InstagranClone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstagranClone/Pods-InstagranClone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InstagranClone/Pods-InstagranClone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4D2A01D9334728A21E339A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstagranClone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		542495682641DF6600C9285B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -370,12 +542,15 @@
 				542495F02641E37100C9285B /* SearchViewController.swift in Sources */,
 				542495D22641E23D00C9285B /* LoginViewController.swift in Sources */,
 				542495742641DF6600C9285B /* HomeViewController.swift in Sources */,
+				54423D8C26420E1100141370 /* StorageManager.swift in Sources */,
 				542495702641DF6600C9285B /* AppDelegate.swift in Sources */,
 				542495FA2641EC9D00C9285B /* PostEditorViewController.swift in Sources */,
 				542495722641DF6600C9285B /* SceneDelegate.swift in Sources */,
 				542495D72641E25D00C9285B /* RegistrationViewController.swift in Sources */,
 				542495BE2641E15C00C9285B /* NotificationViewController.swift in Sources */,
+				54423DA92642178900141370 /* Extensions.swift in Sources */,
 				542495EB2641E34B00C9285B /* ListViewController.swift in Sources */,
+				54423D8726420D9C00141370 /* AuthManager.swift in Sources */,
 				5424957A2641DF6600C9285B /* InstagranClone.xcdatamodeld in Sources */,
 				542495FF2641ECDB00C9285B /* PublishPostViewController.swift in Sources */,
 				542495B42641E0D300C9285B /* ExplorerViewController.swift in Sources */,
@@ -383,6 +558,7 @@
 				542495C42641E18800C9285B /* ProfileViewController.swift in Sources */,
 				542495E62641E32000C9285B /* SettingsViewController.swift in Sources */,
 				542495B92641E11300C9285B /* CameraViewController.swift in Sources */,
+				54423D8226420B9D00141370 /* DataBaseManager.swift in Sources */,
 				542495F52641E39500C9285B /* SearchResultViewController.swift in Sources */,
 				542495DC2641E29500C9285B /* PostViewController.swift in Sources */,
 			);
@@ -557,12 +733,14 @@
 		};
 		5424959A2641DF6A00C9285B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 635264AED866A04588B820A6 /* Pods-InstagranClone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AS994HB957;
 				INFOPLIST_FILE = InstagranClone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -576,12 +754,14 @@
 		};
 		5424959B2641DF6A00C9285B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1C97B3E2EE3BF55ED64626B /* Pods-InstagranClone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AS994HB957;
 				INFOPLIST_FILE = InstagranClone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -595,6 +775,7 @@
 		};
 		5424959D2641DF6A00C9285B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 214FD5882C76DD7BE9FC4167 /* Pods-InstagranCloneTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -617,6 +798,7 @@
 		};
 		5424959E2641DF6A00C9285B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 554D05A8F5421554CAEE2228 /* Pods-InstagranCloneTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -639,6 +821,7 @@
 		};
 		542495A02641DF6A00C9285B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B792F9A10124B7191ECBE34 /* Pods-InstagranClone-InstagranCloneUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -659,6 +842,7 @@
 		};
 		542495A12641DF6A00C9285B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADC819D98328EFA063BEFEA3 /* Pods-InstagranClone-InstagranCloneUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

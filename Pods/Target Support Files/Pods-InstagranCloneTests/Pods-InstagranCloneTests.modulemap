@@ -1,0 +1,6 @@
+framework module Pods_InstagranCloneTests {
+  umbrella header "Pods-InstagranCloneTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
