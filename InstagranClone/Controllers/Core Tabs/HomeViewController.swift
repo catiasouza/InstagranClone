@@ -19,6 +19,11 @@ class HomeViewController: UIViewController {
         super.viewDidAppear(animated)
         
         handleNoAuthentication()
+        do {
+            try Auth.auth().signOut()
+        }catch {
+            print("==== FALHA")
+        }
     }
     private func handleNoAuthentication(){
         //check auth status
