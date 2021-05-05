@@ -128,9 +128,9 @@ class LoginViewController: UIViewController {
                                    height: 50)
         
         privacyButton.frame = CGRect(x: 10,
-                                   y: view.height-view.safeAreaInsets.bottom - 50,
-                                   width: view.width - 20,
-                                   height: 50)
+                                     y: view.height-view.safeAreaInsets.bottom - 50,
+                                     width: view.width - 20,
+                                     height: 50)
         configureHeaderView()
     }
     private func configureHeaderView() {
@@ -170,6 +170,38 @@ class LoginViewController: UIViewController {
             return
         }
         // login functionality
+        var username: String?
+        var email: String?
+        
+        if usernameEmail.contains("@"),usernameEmail.contains(".") {
+            //email
+            email = usernameEmail
+        }else {
+            // username
+            username = usernameEmail
+        }
+        AuthManager.shared.loginEmail(username: username,email: email, password: password) { success in
+            DispatchQueue.main.async {
+                if success {
+                    // user logged in
+                    self.dismiss(animated: true, completion: nil)
+                }else {
+                    // error
+                    let alert = UIAlertController(title: "log in Error",
+                                                  message: "We were to log you in",
+                                                  preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "dismiss",
+                                                  style: .cancel,
+                                                  handler: nil))
+                    self.present(alert, animated: true)
+                    
+                }
+                
+                
+            }
+            
+            
+        }
     }
     @objc private func didTapTermsButton(){
         guard let url = URL(string: "https://help.instagram.com/1215086795543252") else {
@@ -187,7 +219,8 @@ class LoginViewController: UIViewController {
     }
     @objc private func didTapcreateAccountButton(){
         let vc = RegistrationViewController()
-        present(vc, animated: true)
+        vc.title = "Create Account"
+        present(UINavigationController(rootViewController: vc),animated: true)
     }
     
 }
